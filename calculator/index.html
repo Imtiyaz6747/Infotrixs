@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+    <div class="calculator">
+    <br>
+    <br>
+    <div class="buttons">
+      <input type="text" id="display">
+      <hr class="line">
+      <input type="button" value="7" onclick="calculator.addNumber('7')">
+      <input type="button" value="8" onclick="calculator.addNumber('8')">
+      <input type="button" value="9" onclick="calculator.addNumber('9')">
+      <input type="button" value="/" onclick="calculator.addOperator('/')">
+      <br>
+      <input type="button" value="4" onclick="calculator.addNumber('4')">
+      <input type="button" value="5" onclick="calculator.addNumber('5')">
+      <input type="button" value="6" onclick="calculator.addNumber('6')">
+      <input type="button" value="*" onclick="calculator.addOperator('*')">
+      <br>
+      <input type="button" value="1" onclick="calculator.addNumber('1')">
+      <input type="button" value="2" onclick="calculator.addNumber('2')">
+      <input type="button" value="3" onclick="calculator.addNumber('3')">
+      <input type="button" value="-" onclick="calculator.addOperator('-')">
+      <br>
+      <input type="button" value="C" onclick="calculator.clearDisplay()">
+      <input type="button" value="0" onclick="calculator.addNumber('0')">
+      <input type="button" value="=" onclick="calculator.calculate()">      
+      <input type="button" value="+" onclick="calculator.addOperator('+')">
+    </div>
+  </div>
+   <div class="history">
+    <h2>Calculation History</h2>
+    <ul id="history-list">
+    </ul>
+  </div>
+  
+  <script src="calculator.js" type="text/javascript"></script>
+</body>
+</html>
